@@ -1,0 +1,24 @@
+.DS_Store
+.venv/
+node_modules
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Controlled-access participant data and all patient-derived outputs.
+data/raw/
+data/derived/
+qa/
+outputs/private/
+
+# Downloaded public databases are reproducible from the provenance record.
+data/public/
+
+# Pinned local mirror of the official challenge Space.
+official_challenge_space/

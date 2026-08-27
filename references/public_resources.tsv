@@ -1,0 +1,6 @@
+resource	version_or_date	retrieved_utc	url	sha256	local_filename
+NCBI RefSeq GenBank	NM_001211.6	2026-08-26	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_001211.6&rettype=gb&retmode=text	e6162e0c229509602c9aaa77d1c4ce20932694768e32a92f4c9f5cdb4dea3c99	NM_001211.6.gb
+NCBI RefSeq FASTA	NM_001211.6	2026-08-26	https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NM_001211.6&rettype=fasta&retmode=text	c801133af7185d293515592d7dc059f4f6f7a0a38de4d990ae04c14d9861db58	NM_001211.6.fasta
+NCBI ClinVar GRCh38 VCF	fileDate=2026-08-22	2026-08-26	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar_20260822.vcf.gz	d66b75c1cc433dd63471444fbf980fbc6ee07d6060f3b62b8f1910d52650933d	clinvar_20260826_GRCh38.vcf.gz
+NCBI ClinVar GRCh38 index	fileDate=2026-08-22	2026-08-26	https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar_20260822.vcf.gz.tbi	4bc81ef519b77ea8c89b6345bb74537a408ad3466dc19f29a4025d61e771cbbb	clinvar_20260826_GRCh38.vcf.gz.tbi
+UniProt reviewed record	O60566	2026-08-26	https://rest.uniprot.org/uniprotkb/O60566.txt	6aabb2c1c22be62f7c81f231b99d9d527221922cceb65388db057e8f84317421	uniprot_O60566_20260826.txt

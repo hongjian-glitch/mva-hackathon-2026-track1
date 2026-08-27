@@ -1,0 +1,31 @@
+name: verify-public-release
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch pinned official evaluator
+        run: bash scripts/fetch_official_evaluator.sh
+
+      - name: Run unit, contract, privacy, and release tests
+        run: PYTHONPATH=src:. python -m unittest discover -s tests -v
+
+      - name: Scan the checkout for controlled files and credentials
+        run: python scripts/privacy_check.py
+
+      - name: Assemble and scan an allowlisted release
+        run: PYTHONPATH=src:. python scripts/build_public_release.py --output /tmp/mva-public-release
